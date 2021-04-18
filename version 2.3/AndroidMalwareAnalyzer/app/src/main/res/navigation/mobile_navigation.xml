@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.androidmalwareanalyzer.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_apps_info"
+        android:name="com.example.androidmalwareanalyzer.ui.appsInformation.AppsListFragment"
+        android:label="@string/menu_apps_info"
+        tools:layout="@layout/fragment_apps_info" >
+        <action
+            android:id="@+id/action_nav_apps_info_to_nav_app_details"
+            app:destination="@id/nav_app_details" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_app_details"
+        android:name="com.example.androidmalwareanalyzer.ui.appsInformation.AppDetails"
+        android:label="details"
+        tools:layout="@layout/view_app" />
+
+    <fragment
+        android:id="@+id/nav_signature_analyzer"
+        android:name="com.example.androidmalwareanalyzer.ui.signatureAnalyzer.SignatureAnalyzerFragment"
+        android:label="@string/menu_signature_analyzer"
+        tools:layout="@layout/fragment_signature_analyzer" />
+
+    <fragment
+        android:id="@+id/nav_permission_analyzer"
+        android:name="com.example.androidmalwareanalyzer.ui.permissionAnalyzer.PermissionAnalyzerFragment"
+        android:label="@string/menu_permission_analyzer"
+        tools:layout="@layout/fragment_permission_analyzer" />
+
+    <fragment
+        android:id="@+id/nav_log_analyzer"
+        android:name="com.example.androidmalwareanalyzer.ui.logAnalyzer.LogAnalyzerFragment"
+        android:label="@string/menu_log_analyzer"
+        tools:layout="@layout/fragment_log_analyzer" />
+
+    <fragment
+        android:id="@+id/nav_prev_results"
+        android:name="com.example.androidmalwareanalyzer.ui.prevResults.PrevResultsFragment"
+        android:label="@string/menu_prev_results"
+        tools:layout="@layout/fragment_prev_results" />
+
+    <fragment
+        android:id="@+id/nav_server_settings"
+        android:name="com.example.androidmalwareanalyzer.ui.serverSettings.ServerSettingsFragment"
+        android:label="@string/menu_server_settings"
+        tools:layout="@layout/fragment_server_settings" />
+
+    <fragment
+        android:id="@+id/nav_about_us"
+        android:name="com.example.androidmalwareanalyzer.ui.aboutUs.AboutUsFragment"
+        android:label="@string/menu_about_us"
+        tools:layout="@layout/fragment_about_us" />
+</navigation>

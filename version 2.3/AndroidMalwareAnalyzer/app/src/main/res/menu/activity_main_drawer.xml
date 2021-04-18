@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_baseline_home_24"
+            android:title="@string/menu_home" />
+        <item
+            android:id="@+id/nav_apps_info"
+            android:icon="@drawable/ic_baseline_info_24"
+            android:title="@string/menu_apps_info" />
+        <item
+            android:id="@+id/nav_signature_analyzer"
+            android:icon="@drawable/ic_baseline_app_registration_24"
+            android:title="@string/menu_signature_analyzer" />
+        <item
+            android:id="@+id/nav_permission_analyzer"
+            android:icon="@drawable/ic_baseline_app_blocking_24"
+            android:title="@string/menu_permission_analyzer" />
+        <item
+            android:id="@+id/nav_log_analyzer"
+            android:icon="@drawable/ic_baseline_text_snippet_24"
+            android:title="@string/menu_log_analyzer" />
+        <item
+            android:id="@+id/nav_prev_results"
+            android:icon="@drawable/ic_baseline_history_24"
+            android:title="@string/menu_prev_results" />
+        <item
+            android:id="@+id/nav_server_settings"
+            android:icon="@drawable/ic_baseline_settings_24"
+            android:title="@string/menu_server_settings" />
+        <item
+            android:id="@+id/nav_about_us"
+            android:icon="@drawable/ic_baseline_people_alt_24"
+            android:title="@string/menu_about_us" />
+    </group>
+</menu>
