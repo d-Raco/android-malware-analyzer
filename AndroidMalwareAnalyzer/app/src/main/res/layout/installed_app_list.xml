@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="3dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <ImageView
+            android:id="@+id/app_icon"
+            android:layout_width="48dp"
+            android:layout_height="48dp" />
+
+        <LinearLayout
+            android:layout_width="275dp"
+            android:layout_height="46dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginEnd="52dp"
+            android:layout_marginRight="52dp"
+            android:layout_toEndOf="@+id/app_icon"
+            android:layout_toRightOf="@+id/app_icon"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/list_app_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="App Name"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/list_app_package"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="App Package Name" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="14dp"
+            android:layout_marginLeft="14dp"
+            android:layout_marginTop="11dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginRight="0dp"
+            android:layout_marginBottom="11dp"
+            app:srcCompat="@drawable/ic_baseline_keyboard_arrow_right_24"
+            tools:ignore="VectorDrawableCompat" />
+
+    </RelativeLayout>
+
+</LinearLayout>

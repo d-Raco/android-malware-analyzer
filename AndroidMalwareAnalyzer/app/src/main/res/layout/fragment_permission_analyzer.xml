@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.permissionAnalyzer.PermissionAnalyzerFragment">
+
+        <RelativeLayout
+            android:id="@+id/lay"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginRight="0dp"
+            android:background="#66CDAA">
+
+            <ProgressBar
+                android:id="@+id/progress_score"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="106dp"
+                android:layout_marginLeft="106dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="105dp"
+                android:layout_marginRight="105dp"
+                android:layout_marginBottom="0dp"
+                android:indeterminateOnly="false"
+                android:progressDrawable="@drawable/circle"
+                tools:progress="100" />
+
+            <TextView
+                android:id="@+id/score"
+                android:layout_width="171dp"
+                android:layout_height="66dp"
+                android:layout_alignStart="@+id/progress_score"
+                android:layout_alignLeft="@+id/progress_score"
+                android:layout_alignTop="@+id/progress_score"
+                android:layout_alignEnd="@+id/progress_score"
+                android:layout_alignRight="@+id/progress_score"
+                android:layout_alignBottom="@+id/progress_score"
+                android:layout_marginStart="14dp"
+                android:layout_marginLeft="14dp"
+                android:layout_marginTop="69dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="65dp"
+                android:gravity="center"
+                android:text="10/10"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textColor="@color/white"
+                android:textSize="22sp" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="372dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="20dp"
+                android:text="Analysis Results"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:layout_marginLeft="20dp"/>
+
+            <ExpandableListView
+                android:id="@+id/expandableListView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:childDivider="@android:color/transparent"
+                android:groupIndicator="@null" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+            <View
+                android:id="@+id/divider4"
+                android:layout_width="wrap_content"
+                android:layout_height="6dp"
+                android:layout_below="@+id/appimg"
+                android:layout_gravity="center"
+                android:background="@color/light_grey"
+                android:layout_marginTop="20dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="333dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="20dp"
+                android:text="More Information"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+            <ListView
+                android:id="@+id/sorted"
+                android:layout_width="match_parent"
+                android:layout_height="313dp"
+                android:layout_marginTop="20dp"
+                android:childDivider="@android:color/transparent"
+                android:groupIndicator="@null" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>
